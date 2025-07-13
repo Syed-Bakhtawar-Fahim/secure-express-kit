@@ -1,5 +1,5 @@
 {
-  "name": "secure-express-kit",
+  "name": "secure-express-kits",
   "version": "1.0.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
