@@ -1,0 +1,35 @@
+{
+  "name": "secure-express-kit",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "start": "npm run build && node ./build/src/app.js",
+    "build": "tsc",
+    "watch": "tsc -w -p .",
+    "start:dev": "concurrently -k \"npm:watch\" \"nodemon --watch ./build --inspect=0.0.0.0:9229 --nolazy ./build/src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "security",
+    "xss",
+    "sql",
+    "rate-limit"
+  ],
+  "author": "Syed Bakhtawar Fahim",
+  "license": "ISC",
+  "description": "A modular security middleware toolkit for Express.js with built-in rate limiting, SQL injection protection, and XSS sanitization.",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlstring": "^2.3.3",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
