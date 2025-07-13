@@ -1,5 +1,5 @@
 {
-  "name": "secure-express-kit",
+  "name": "express-safeguard",
   "version": "1.0.0",
   "publishConfig": {
     "access": "public"
