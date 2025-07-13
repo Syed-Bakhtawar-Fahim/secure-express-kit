@@ -1,6 +1,6 @@
 {
   "name": "secure-express-kits",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -17,7 +17,7 @@
     "rate-limit"
   ],
   "author": "Syed Bakhtawar Fahim",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A modular security middleware toolkit for Express.js with built-in rate limiting, SQL injection protection, and XSS sanitization.",
   "dependencies": {
     "express": "^5.1.0",
