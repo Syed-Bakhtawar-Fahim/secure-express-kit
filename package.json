@@ -1,5 +1,5 @@
 {
-  "name": "secure-express-kits",
+  "name": "secure-express-kit",
   "version": "1.0.1",
   "publishConfig": {
     "access": "public"
