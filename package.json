@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w -p .",
     "start:dev": "concurrently -k \"npm:watch\" \"nodemon --watch ./build --inspect=0.0.0.0:9229 --nolazy ./build/src/app.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm version patch && npm run build && npm publish --access public"
   },
   "keywords": [
     "express",
