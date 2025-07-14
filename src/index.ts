@@ -14,3 +14,6 @@ export function secureMiddleware(options: SecureMiddlewareOptions = {}) {
   }
   return middleware;
 }
+
+export { sanitizeMiddleware } from './middleware/sanitizeMiddleware';
+export { expressRateLimiter } from './middleware/rateLimiter';

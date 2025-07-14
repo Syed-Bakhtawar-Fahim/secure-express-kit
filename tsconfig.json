@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                 
-    "experimentalDecorators": true,                   
-    "emitDecoratorMetadata": true,                    
-    "module": "commonjs",                               
-    "rootDir": ".",                                
-    "baseUrl": ".",                                  
-    "outDir": "build",                                   
-    "esModuleInterop": true,                            
-    "forceConsistentCasingInFileNames": true,          
-    "strict": false,                                      
-    "skipDefaultLibCheck": true,                      
-    "skipLibCheck": true                       
-  }
+    "target": "es2016",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "rootDir": "src",                   
+    "baseUrl": ".",                      
+    "outDir": "build",                  
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
 }
