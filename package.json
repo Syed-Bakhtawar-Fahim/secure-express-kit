@@ -1,6 +1,6 @@
 {
   "name": "express-shield-securekit",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "build/src/index.js",
   "type": "module",
   "publishConfig": {
