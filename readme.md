@@ -1,18 +1,23 @@
-# secure-express-kit
+# Express Shield SecureKit
 
-A modular security middleware toolkit for Express.js with built-in protection against common web attacks.
+A modular security middleware toolkit for Express.js with built-in protection against common web attacks including SQL Injection, XSS, and request flooding.
 
+---
+
+```md
 ## ✨ Features
 
-- ⚡ Rate Limiting (In-memory and Redis support)
-- 🛡️ SQL Injection Detection & Blocking
-- 🚫 XSS Protection using whitelist-based sanitization
-- 🔧 Pluggable architecture for adding more middleware in the future
+- ⚡ **Rate Limiting** (in-memory & Redis)
+- 🛡️ **SQL Injection Detection & Blocking**
+- 🚫 **XSS Protection** using sanitization
+- 🔌 **Modular Middleware Architecture**
+
+---
 
 ## 📦 Installation
 
 ```bash
-npm install secure-express-kit
+npm install express-shield-securekit
 ```
 
 ## Usage
@@ -46,6 +51,7 @@ app.listen(3000, () => {
   console.log("Server running on http://localhost:3000");
 });
 ```
+
 
 ## 🧱 Middleware Provided
 
@@ -106,5 +112,4 @@ Automatically blocks the request with 400 Bad Request if threats are found. If m
 
 ## Author
 
-```md
-Made with ❤️ by Syed Bakhtawar(https://github.com/Syed-Bakhtawar-Fahim)
+Made with ❤️ by [Syed Bakhtawar Fahim](https://github.com/Syed-Bakhtawar-Fahim)
