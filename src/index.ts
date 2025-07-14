@@ -10,7 +10,7 @@ export function secureMiddleware(options: SecureMiddlewareOptions = {}) {
     middleware.push(expressRateLimiter(options.rateLimit));
   }
   if (options.sanitizeMiddleware) {
-    middleware.push(sanitizeMiddleware(Request, Response, NextFunction));
+    middleware.push(sanitizeMiddleware);
   }
   return middleware;
 }
