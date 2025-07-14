@@ -2,7 +2,7 @@
   "name": "express-shield-securekit",
   "version": "1.0.15",
   "main": "build/src/index.js",
-  "type": "module",
+  "types": "build/src/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
