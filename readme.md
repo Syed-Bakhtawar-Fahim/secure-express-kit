@@ -21,6 +21,8 @@ npm install express-shield-securekit
 
 ## Usage
 
+### Method 1: Manual Middleware Setup (Flexible but Verbose)
+
 ```bash
 import { expressRateLimiter, sanitizeMiddleware } from "express-shield-securekit";
 
@@ -36,6 +38,38 @@ app.use(expressRateLimiter({
 
 // Global Sanitizer Middleware (XSS + SQL Injection)
 app.use(sanitizeMiddleware);
+
+app.post("/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "Request passed all security checks!",
+    sanitizedBody: req.body,
+  });
+});
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
+```
+
+### Method 2: Easy Integration (Recommended)
+
+```bash
+const { secureMiddleware } = require("express-shield-securekit");
+
+const app = express();
+app.use(express.json());
+
+rateLimitOptions = {
+    windowMs: 60 * 1000,
+    max: 5,
+    message: "Too many requests. Please try again later."
+}
+
+app.use(secureMiddleware({
+    rateLimit: rateLimitOptions,
+    sanitizeMiddleware: true
+}))
 
 app.post("/test", (req, res) => {
   res.json({
