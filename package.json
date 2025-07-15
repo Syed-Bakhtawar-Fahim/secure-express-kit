@@ -10,6 +10,10 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syed-Bakhtawar-Fahim/secure-express-kit.git"
+  },
   "keywords": [
     "express",
     "middleware",
@@ -20,12 +24,16 @@
   ],
   "author": "Syed Bakhtawar Fahim",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Syed-Bakhtawar-Fahim/secure-express-kit/issues"
+  },
   "description": "A modular security middleware toolkit for Express.js with built-in rate limiting, SQL injection protection, and XSS sanitization.",
   "dependencies": {
     "express": "^5.1.0",
     "sqlstring": "^2.3.3",
     "xss": "^1.0.15"
   },
+  "homepage": "https://github.com/Syed-Bakhtawar-Fahim/secure-express-kit#readme",
   "devDependencies": {
     "@types/node": "^24.0.13",
     "nodemon": "^3.1.10",
