@@ -123,6 +123,12 @@ app.use(expressRateLimiter({
 3. AI-based anomaly detection for malicious payloads - Block suspicious payloads with pattern learning
 4. Rate Limiting for Microservices - Redis/pub-sub friendly distributed throttling
 
+## Test
+
+```bash
+npm test
+```
+
 ## Author
 
 Made with ❤️ by [Syed Bakhtawar Fahim](https://github.com/Syed-Bakhtawar-Fahim)
